@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>gulp-scss-starter</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="styles/main.min.css">
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.min.css"
+        />
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.min.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.min.js"></script>
+        <script>
+            AOS.init();
+          </script>
+    </head>
+    <body class="body">
+     
+        <header class="header">
+    <nav class="nav">
+        <img src="./img/logo.png">
+        <div class="nav__item">
+            <a href="#" class="nav__element">Главная</a>
+            <a href="#" class="nav__element">Выставки</a>
+            <a href="#" class="nav__element">Личный кабинет</a>
+        </div>
+    </nav>
+</header>
+        <img src="./img/rectangle 22.svg" style="position: absolute; right: 0; top: 100px;">
+        <section class="section">
+            
+            <div class="sectionConteiner" style="margin-top: 100px;">
+                <h1 class="title">Новые выставки</h1>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiperContainer">
+                                <img src="./img/image 4.png">
+                                <div class="slide__text">
+                                    <h1 class="slideText__title">«С любовью к прошлому»</h1>
+                                    <p class="slideText__text">Персональная выставка живописи и графики заслуженного художника России Геннадия Кудрявцева, к 80-летию со дня рождения</p>
+                                    <a href="#" class="slideText__btn">Купить билет</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiperContainer">
+                                <img src="./img/image 4.png">
+                                <div class="slide__text">
+                                    <h1 class="slideText__title">«С любовью к прошлому»</h1>
+                                    <p class="slideText__text">Персональная выставка живописи и графики заслуженного художника России Геннадия Кудрявцева, к 80-летию со дня рождения</p>
+                                    <a href="#" class="slideText__btn">Купить билет</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end Slides -->
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="rectangle">
+                <img src="./img/Rectangle 16.png">
+                <img src="./img/Rectangle 17.png">
+            </div>
+            <h1 class="textContainer-title">Список всех выставок</h1>
+            <div class="listContainer">
+
+                <!--Начало-->
+                <div class="item__list">
+                    <img src="./img/image 5.png">
+                    <div class="itemList__info">
+                        <h1 class="itemList__title">«Земные просторы»</h1>
+                        <p class="itemList__text">Выставка графики и живописи</p>
+                        <p class="itemList__data">29 апреля - 29 мая</p>
+                        <a href="#" class="slideText__btn">Купить билет</a>
+                    </div>
+                </div>
+                <!--Конец-->
+
+            </div>
+
+    </section>
+
+        
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__logo">
+            <div>
+                <img src="./img/logo.png">
+                <h1 class="logo__title">museum</h1>
+            </div>
+            <div class="logo__footer">Белгород, ул. Победы, 77</div>
+        </div>
+        <div class="footer__info">
+            <p>Время работы: 8:00 - 21:00</p>
+            <p>Телефон: +8 (999) 456-54-23</p>
+        </div>
+    </div>
+</footer>
+        <script src="js/vendor.min.js"></script>
+        <script src="js/main.min.js"></script>
+        <script type="module">
+            import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.min.js'
+          
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                navigation: false,
+                centeredSlides: true,
+                autoplay: {
+                delay: 4500,
+                disableOnInteraction: true,
+                },
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            })
+          </script>
+    </body>
+</html>

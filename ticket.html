@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>gulp-scss-starter</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="styles/main.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.min.js"></script>
+        <script>
+            AOS.init();
+          </script>
+        
+    </head>
+    <body class="body">
+        <div class="modal" id="#modal">
+    <div class="modal__bg"></div>
+    <div class="modal__container">
+        <div class="modal__item">
+            <div class="modal__text">
+                <p>Билет успешно приобретен!</p>
+                <p>Посмотреть информацию можно в личном кабинете.</p>
+            </div>
+            <div class="modal__close"></div>
+        </div>
+    </div>
+</div>
+        <header class="header">
+    <nav class="nav">
+        <img src="./img/logo.png">
+        <div class="nav__item">
+            <a href="#" class="nav__element">Главная</a>
+            <a href="#" class="nav__element">Выставки</a>
+            <a href="#" class="nav__element">Личный кабинет</a>
+        </div>
+    </nav>
+</header>
+        
+        <img src="./img/rectangle 18.svg" style="position: absolute; right: 0; top: 100px;z-index: -1000;">
+        <section class="section">
+            <div class="sectionConteiner" style="margin-top: 100px;">
+                <h1 class="title">Купить билет</h1>
+                <form class="form__login">
+                    <div class="form__item reg">
+                        <span class="span">Выставка</span>
+                        <span class="span">Выставка</span>
+                    </div>
+                    
+                    <div class="form__item reg">
+                        <span class="span">Дата</span>
+                        <input class="inputLogin reg__item data__inp" type="date">
+                    </div>
+
+                    <div class="form__item reg">
+                        <span class="span">Тип билета</span>
+                            <select class="inputLogin reg__item" name="ticket__child">
+                                <option value="1">Взрослый</option>
+                                <option value="2">Детский</option>
+                              </select>
+                    </div>
+
+                    <div class="form__item reg">
+                        <span class="span">Экскурсия</span>
+                        <input class="inputLogin__checkbox" type="checkbox">
+
+                        <span class="span time__text">Время</span>
+                        <select class="inputLogin time" name="ticket__time">
+                            <option value="1">10::00</option>
+                            <option value="2">12:00</option>
+                            <option value="3">14:00</option>
+                            <option value="4">16:00</option>
+                            <option value="5">17:00</option>
+                            <option value="6">18:00</option>
+                          </select>
+                    </div>
+
+                    <div class="form__item reg">
+                        <span class="span">Цуна</span>
+                        <span class="span">350 р</span>
+                    </div>
+
+                    <a class="form__btn mod" id="#mod">Купить</a>
+                </form>
+            </div>
+        </section>
+
+
+        
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__logo">
+            <div>
+                <img src="./img/logo.png">
+                <h1 class="logo__title">museum</h1>
+            </div>
+            <div class="logo__footer">Белгород, ул. Победы, 77</div>
+        </div>
+        <div class="footer__info">
+            <p>Время работы: 8:00 - 21:00</p>
+            <p>Телефон: +8 (999) 456-54-23</p>
+        </div>
+    </div>
+</footer>
+        <script src="js/vendor.min.js"></script>
+        <script src="js/main.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.min.js"></script>
+    </body>
+</html>
